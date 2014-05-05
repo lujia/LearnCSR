@@ -1,0 +1,18 @@
+These are Matlab functions reading sparse matrices 
+
+This directory contains:
+
+1. readunf_for.m
+
+Read unformatted binary files for CSR matrix. It is not recommended due to two reasons: 
+     * Easy to make mistakes, difficult to check binary file
+     * Difficult to share between different systems 
+
+2. readIJ.m
+
+Read ASCII file for IJ matrix. Recommended. 
+
+3. checkmat.m
+
+Test code for checking i/o. There is also a test sparse matrix in CSR and IJ format. 
+

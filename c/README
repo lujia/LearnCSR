@@ -1,0 +1,19 @@
+This is for reading CSR sparse matrix written as Fortran binary format.
+
+This directory contains:
+
+1. iosm.c
+
+I/O subroutines
+
+2. checkio.f
+
+Test code for checking i/o. 
+
+3. Makefile
+
+Standard makefile using gcc compiler, just use "make checkio" to generate executable.
+
+4. Test matrix in CSR format 
+
+

@@ -1,0 +1,45 @@
+These are standard sparse matrix input/output subroutines (taken from 
+SparseKit2 by Y. Saad). 
+
+This directory contains:
+
+1. inout.f
+
+I/O subroutines:
+
+c----------------------------------------------------------------------c
+C                        INPUT-OUTPUT MODULE                           c
+c----------------------------------------------------------------------c
+c contents:                                                            c
+c----------                                                            c
+c  readmt : reads matrices in the Boeing/Harwell format.               c
+c  prtmt  : prints matrices in the Boeing/Harwell format.              c
+c  dump   : outputs matrix rows in a simple format (debugging purposes)c 
+c  pspltm : generates a post-script plot of the non-zero pattern of A  c
+c  pltmt  : produces a 'pic' file for plotting a sparse matrix         c
+c  smms   : write the matrx in a format used in SMMS package           c
+c  readsm : reads matrics in coordinate format (as in SMMS package)    c
+c  readsk : reads matrices in CSR format (simplified H/B formate).     c
+c  skit   : writes matrics to a file, format same as above.            c
+c  prtunf : writes matrics (in CSR format) unformatted                 c
+c  readunf: reads unformatted data of matrics (in CSR format)          c
+c----------------------------------------------------------------------c
+
+
+2. hb2pic.f / hb2ps.f
+
+Sparse matrix visualization:
+
+To visualize a Harwell-Boeing matrix on a Unix workstation, it is easiest
+to convert it to a postscript file and then view it with ghostview or gs.
+The program hb2ps.ex may be used for the former purpose.
+
+3. chkio.f
+
+Test code for checking i/o. 
+
+4. makefile
+
+Standard makefile using f77 compiler. 
+
+
